@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #2c2929;
+  color: white;
+  text-align: center;
+}
+.card {
+  background: #222;
+  color: white;
+  padding: 20px;
+  margin: 110px auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  border-color: white;
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.1);
+}
+#heading {
+  margin-top: 40px;
+  color: #f3eeee;
+  font-size: 14px;
+}
+.description {
+  color: #f3eeee;
+}
+.form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+input, select, button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 55px;
+  border: 2px solid #ccc;
+}
+option{
+  background-color: #222;
+  color: white;
+}
+button {
+  background-color: #666;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 29px;
+  margin-bottom: px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.tasks {
+  padding: 0;
+  margin-top: 30px;
+}
+.tasks li {
+  background-color: #312c2c;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.completed {
+  background-color: #d4edda;
+  color: green;
+}
+.expired {
+  background-color: #f8d7da;
+  color: red;
+}
+footer {
+  color: #f3eeee;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 95%;
+    margin: 80px auto;
+    padding: 15px;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, select, button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .tasks li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 15px;
+    margin: 50px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  input, select, button {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .tasks li {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .form {
+    gap: 8px;
+  }
+
+  input, select, button {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .tasks li {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1280px) {
+  .card {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .form {
+    gap: 15px;
+  }
+
+  input, select, button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .tasks li {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .card {
+    width: 60%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  input, select, button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .tasks li {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* 🔹 Tablet Devices (up to 992px) */
+@media (max-width: 992px) {
+  .card {
+    width: 95%;
+    margin: 80px auto;
+    padding: 15px;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, select, button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .tasks li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

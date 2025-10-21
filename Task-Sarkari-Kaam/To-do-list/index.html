@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <main id="heading">
+        <h1>To-Do-List</h1>
+        <p class="description">
+            Add tasks, set a timer, and see if you can complete them before time runs out!
+        </p>
+    </main>
+    <main class="card">
+        <form id="taskForm" class="form" aria-label="Add new task">
+            <input id="taskInput" type="text" placeholder="Add Task" required>
+            <input id="timeValue" type="number" placeholder="Enter number" min="1" required>
+
+            <select id="timeType">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <h2>Active Tasks</h2>
+        <ul id="taskList" class="tasks" aria-live="polite"></ul>
+
+        <h2>Completed Tasks</h2>
+        <ul id="completedList" class="tasks"></ul>
+
+        <h2>Forgotten Tasks</h2>
+        <ul id="forgottenList" class="tasks"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Jollyhood Programmer</p>
+    </footer>
+</body>
+</html>
